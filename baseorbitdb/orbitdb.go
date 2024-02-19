@@ -8,11 +8,11 @@ import (
 	"sync"
 	"time"
 
-	coreapi "github.com/ipfs/boxo/coreiface"
 	cid "github.com/ipfs/go-cid"
 	datastore "github.com/ipfs/go-datastore"
 	leveldb "github.com/ipfs/go-ds-leveldb"
 	cbornode "github.com/ipfs/go-ipld-cbor"
+	coreapi "github.com/ipfs/kubo/core/coreapi"
 	"github.com/libp2p/go-libp2p/core/event"
 	peer "github.com/libp2p/go-libp2p/core/peer"
 	"github.com/libp2p/go-libp2p/p2p/host/eventbus"

@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	coreapi "github.com/ipfs/boxo/coreiface"
 	cid "github.com/ipfs/go-cid"
+	coreapi "github.com/ipfs/kubo/core/coreapi"
 	ipfslog "github.com/thusharprakash/go-ipfs-log"
 	"github.com/thusharprakash/go-ipfs-log/identityprovider"
 	"github.com/thusharprakash/go-orbit-db/address"

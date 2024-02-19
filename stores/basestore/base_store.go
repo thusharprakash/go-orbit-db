@@ -8,11 +8,10 @@ import (
 	"sync"
 	"time"
 
-	coreapi "github.com/ipfs/boxo/coreiface"
-	"github.com/ipfs/boxo/coreiface/path"
 	cid "github.com/ipfs/go-cid"
 	datastore "github.com/ipfs/go-datastore"
 	files "github.com/ipfs/go-libipfs/files"
+	coreapi "github.com/ipfs/kubo/core/coreapi"
 	"github.com/libp2p/go-libp2p/core/event"
 	"github.com/libp2p/go-libp2p/core/peer"
 	"github.com/libp2p/go-libp2p/p2p/host/eventbus"
@@ -719,7 +718,7 @@ func (b *BaseStore) LoadFromSnapshot(ctx context.Context) error {
 
 	b.Logger().Debug("loading snapshot from path", zap.String("snapshot", string(snapshot)))
 
-	resNode, err := b.IPFS().Unixfs().Get(ctx, path.New(string(snapshot)))
+	resNode, err := b.IPFS().Unixfs().Get(ctx, coreapi.ResolvePath(string(snapshot)))
 	if err != nil {
 		return fmt.Errorf("unable to get snapshot from ipfs: %w", err)
 	}

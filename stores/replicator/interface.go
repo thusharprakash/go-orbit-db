@@ -3,8 +3,8 @@ package replicator
 import (
 	"context"
 
-	coreapi "github.com/ipfs/boxo/coreiface"
 	cid "github.com/ipfs/go-cid"
+	coreapi "github.com/ipfs/kubo/core/coreapi"
 	"github.com/libp2p/go-libp2p/core/event"
 	ipfslog "github.com/thusharprakash/go-ipfs-log"
 	"github.com/thusharprakash/go-ipfs-log/identityprovider"

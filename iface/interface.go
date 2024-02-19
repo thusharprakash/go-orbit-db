@@ -4,9 +4,9 @@ import (
 	"context"
 	"time"
 
-	coreapi "github.com/ipfs/boxo/coreiface"
 	cid "github.com/ipfs/go-cid"
 	datastore "github.com/ipfs/go-datastore"
+	coreapi "github.com/ipfs/kubo/core/coreapi"
 	"github.com/libp2p/go-libp2p/core/event"
 	peer "github.com/libp2p/go-libp2p/core/peer"
 	ipfslog "github.com/thusharprakash/go-ipfs-log"

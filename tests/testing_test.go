@@ -11,12 +11,12 @@ import (
 	"github.com/libp2p/go-libp2p/core/crypto"
 	"github.com/libp2p/go-libp2p/core/peer"
 
-	iface "github.com/ipfs/boxo/coreiface"
 	ds "github.com/ipfs/go-datastore"
 	dsync "github.com/ipfs/go-datastore/sync"
 	cfg "github.com/ipfs/kubo/config"
 	ipfsCore "github.com/ipfs/kubo/core"
 	"github.com/ipfs/kubo/core/coreapi"
+	iface "github.com/ipfs/kubo/core/coreapi"
 	mock "github.com/ipfs/kubo/core/mock"
 	"github.com/ipfs/kubo/repo"
 	mocknet "github.com/libp2p/go-libp2p/p2p/net/mock"

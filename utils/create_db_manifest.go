@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"path"
 
-	coreapi "github.com/ipfs/boxo/coreiface"
 	cid "github.com/ipfs/go-cid"
 	cbornode "github.com/ipfs/go-ipld-cbor"
+	coreapi "github.com/ipfs/kubo/core/coreapi"
 	"github.com/polydawn/refmt/obj/atlas"
 	"github.com/thusharprakash/go-ipfs-log/io"
 )

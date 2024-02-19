@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"sync"
 
-	coreapi "github.com/ipfs/boxo/coreiface"
 	cid "github.com/ipfs/go-cid"
 	cbornode "github.com/ipfs/go-ipld-cbor"
+	coreapi "github.com/ipfs/kubo/core/coreapi"
 	"github.com/polydawn/refmt/obj/atlas"
 	logac "github.com/thusharprakash/go-ipfs-log/accesscontroller"
 	"github.com/thusharprakash/go-ipfs-log/identityprovider"
