@@ -718,11 +718,10 @@ func (b *BaseStore) LoadFromSnapshot(ctx context.Context) error {
 
 	b.Logger().Debug("loading snapshot from path", zap.String("snapshot", string(snapshot)))
 
-	resNode, err := b.IPFS().Unixfs().Get(ctx, coreapi.ResolvePath(string(snapshot)))
+	resNode, err := b.IPFS().Unixfs().Get(ctx, coreapi.ResolveNode(ctx, string(snapshot)))
 	if err != nil {
 		return fmt.Errorf("unable to get snapshot from ipfs: %w", err)
 	}
-
 	res, ok := resNode.(files.File)
 	if !ok {
 		return fmt.Errorf("unable to cast fetched data as a file")
