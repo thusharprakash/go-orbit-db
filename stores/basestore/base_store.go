@@ -8,9 +8,9 @@ import (
 	"sync"
 	"time"
 
+	files "github.com/ipfs/boxo/files"
 	cid "github.com/ipfs/go-cid"
 	datastore "github.com/ipfs/go-datastore"
-	files "github.com/ipfs/go-libipfs/files"
 	coreapi "github.com/ipfs/kubo/core/coreapi"
 	"github.com/libp2p/go-libp2p/core/event"
 	"github.com/libp2p/go-libp2p/core/peer"

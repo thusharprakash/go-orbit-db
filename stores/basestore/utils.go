@@ -6,9 +6,9 @@ import (
 	"encoding/json"
 	"fmt"
 
+	files "github.com/ipfs/boxo/files"
 	cid "github.com/ipfs/go-cid"
 	datastore "github.com/ipfs/go-datastore"
-	files "github.com/ipfs/go-libipfs/files"
 	"github.com/thusharprakash/go-ipfs-log/entry"
 	"github.com/thusharprakash/go-orbit-db/iface"
 )
