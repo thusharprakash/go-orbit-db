@@ -7,13 +7,13 @@ import (
 	"testing"
 	"time"
 
-	orbitdb "berty.tech/go-orbit-db"
-	"berty.tech/go-orbit-db/address"
-	"berty.tech/go-orbit-db/iface"
-	"berty.tech/go-orbit-db/stores"
-	"berty.tech/go-orbit-db/stores/basestore"
-	"berty.tech/go-orbit-db/stores/operation"
 	"github.com/stretchr/testify/require"
+	orbitdb "github.com/thusharprakash/go-orbit-db"
+	"github.com/thusharprakash/go-orbit-db/address"
+	"github.com/thusharprakash/go-orbit-db/iface"
+	"github.com/thusharprakash/go-orbit-db/stores"
+	"github.com/thusharprakash/go-orbit-db/stores/basestore"
+	"github.com/thusharprakash/go-orbit-db/stores/operation"
 )
 
 func TestPersistence(t *testing.T) {

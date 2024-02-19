@@ -4,8 +4,8 @@ import (
 	"strings"
 	"testing"
 
-	"berty.tech/go-orbit-db/address"
 	"github.com/stretchr/testify/require"
+	"github.com/thusharprakash/go-orbit-db/address"
 )
 
 func TestOrbitDBAddress(t *testing.T) {

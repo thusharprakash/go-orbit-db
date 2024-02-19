@@ -5,12 +5,12 @@ import (
 	"fmt"
 	"sync"
 
-	logac "berty.tech/go-ipfs-log/accesscontroller"
-	"berty.tech/go-ipfs-log/identityprovider"
-	"berty.tech/go-orbit-db/accesscontroller"
-	"berty.tech/go-orbit-db/address"
-	"berty.tech/go-orbit-db/iface"
 	cid "github.com/ipfs/go-cid"
+	logac "github.com/thusharprakash/go-ipfs-log/accesscontroller"
+	"github.com/thusharprakash/go-ipfs-log/identityprovider"
+	"github.com/thusharprakash/go-orbit-db/accesscontroller"
+	"github.com/thusharprakash/go-orbit-db/address"
+	"github.com/thusharprakash/go-orbit-db/iface"
 	"go.uber.org/zap"
 )
 

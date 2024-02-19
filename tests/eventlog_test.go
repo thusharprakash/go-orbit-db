@@ -7,11 +7,11 @@ import (
 	"strings"
 	"testing"
 
-	orbitdb "berty.tech/go-orbit-db"
-	"berty.tech/go-orbit-db/iface"
-	"berty.tech/go-orbit-db/stores/operation"
 	cid "github.com/ipfs/go-cid"
 	"github.com/stretchr/testify/require"
+	orbitdb "github.com/thusharprakash/go-orbit-db"
+	"github.com/thusharprakash/go-orbit-db/iface"
+	"github.com/thusharprakash/go-orbit-db/stores/operation"
 )
 
 func cidPtr(c cid.Cid) *cid.Cid {

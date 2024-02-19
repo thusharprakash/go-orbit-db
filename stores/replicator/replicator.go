@@ -7,11 +7,11 @@ import (
 	"strings"
 	"sync"
 
-	ipfslog "berty.tech/go-ipfs-log"
-	"berty.tech/go-ipfs-log/iface"
 	cid "github.com/ipfs/go-cid"
 	"github.com/libp2p/go-libp2p/core/event"
 	"github.com/libp2p/go-libp2p/p2p/host/eventbus"
+	ipfslog "github.com/thusharprakash/go-ipfs-log"
+	"github.com/thusharprakash/go-ipfs-log/iface"
 	otkv "go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/trace"
 	"go.uber.org/zap"

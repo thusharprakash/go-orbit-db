@@ -1,7 +1,7 @@
 package operation
 
 import (
-	ipfslog "berty.tech/go-ipfs-log"
+	ipfslog "github.com/thusharprakash/go-ipfs-log"
 )
 
 type OpDoc interface {

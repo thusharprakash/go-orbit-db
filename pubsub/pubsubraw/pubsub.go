@@ -9,9 +9,9 @@ import (
 	"go.opentelemetry.io/otel/trace"
 	"go.uber.org/zap"
 
-	"berty.tech/go-orbit-db/events"
-	"berty.tech/go-orbit-db/iface"
-	"berty.tech/go-orbit-db/pubsub"
+	"github.com/thusharprakash/go-orbit-db/events"
+	"github.com/thusharprakash/go-orbit-db/iface"
+	"github.com/thusharprakash/go-orbit-db/pubsub"
 )
 
 type psTopic struct {

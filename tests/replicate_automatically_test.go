@@ -7,17 +7,17 @@ import (
 	"testing"
 	"time"
 
-	orbitdb "berty.tech/go-orbit-db"
-	"berty.tech/go-orbit-db/accesscontroller"
-	"berty.tech/go-orbit-db/iface"
-	"berty.tech/go-orbit-db/stores"
-	"berty.tech/go-orbit-db/stores/operation"
 	cid "github.com/ipfs/go-cid"
 	"github.com/ipfs/kubo/core"
 	"github.com/libp2p/go-libp2p/core/peer"
 	p2pmocknet "github.com/libp2p/go-libp2p/p2p/net/mock"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	orbitdb "github.com/thusharprakash/go-orbit-db"
+	"github.com/thusharprakash/go-orbit-db/accesscontroller"
+	"github.com/thusharprakash/go-orbit-db/iface"
+	"github.com/thusharprakash/go-orbit-db/stores"
+	"github.com/thusharprakash/go-orbit-db/stores/operation"
 	"go.uber.org/zap"
 )
 

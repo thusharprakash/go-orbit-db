@@ -6,16 +6,16 @@ import (
 	"fmt"
 	"sync"
 
-	logac "berty.tech/go-ipfs-log/accesscontroller"
-	"berty.tech/go-ipfs-log/identityprovider"
-	"berty.tech/go-ipfs-log/io"
-	"berty.tech/go-orbit-db/accesscontroller"
-	"berty.tech/go-orbit-db/address"
-	"berty.tech/go-orbit-db/iface"
+	coreapi "github.com/ipfs/boxo/coreiface"
 	cid "github.com/ipfs/go-cid"
 	cbornode "github.com/ipfs/go-ipld-cbor"
-	coreapi "github.com/ipfs/interface-go-ipfs-core"
 	"github.com/polydawn/refmt/obj/atlas"
+	logac "github.com/thusharprakash/go-ipfs-log/accesscontroller"
+	"github.com/thusharprakash/go-ipfs-log/identityprovider"
+	"github.com/thusharprakash/go-ipfs-log/io"
+	"github.com/thusharprakash/go-orbit-db/accesscontroller"
+	"github.com/thusharprakash/go-orbit-db/address"
+	"github.com/thusharprakash/go-orbit-db/iface"
 	"go.uber.org/zap"
 )
 

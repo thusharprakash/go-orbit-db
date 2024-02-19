@@ -3,8 +3,8 @@ package eventlogstore
 import (
 	"sync"
 
-	ipfslog "berty.tech/go-ipfs-log"
-	"berty.tech/go-orbit-db/iface"
+	ipfslog "github.com/thusharprakash/go-ipfs-log"
+	"github.com/thusharprakash/go-orbit-db/iface"
 )
 
 type eventIndex struct {

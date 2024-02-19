@@ -3,12 +3,12 @@ package replicator
 import (
 	"context"
 
-	ipfslog "berty.tech/go-ipfs-log"
-	"berty.tech/go-ipfs-log/identityprovider"
-	"berty.tech/go-orbit-db/accesscontroller"
+	coreapi "github.com/ipfs/boxo/coreiface"
 	cid "github.com/ipfs/go-cid"
-	coreapi "github.com/ipfs/interface-go-ipfs-core"
 	"github.com/libp2p/go-libp2p/core/event"
+	ipfslog "github.com/thusharprakash/go-ipfs-log"
+	"github.com/thusharprakash/go-ipfs-log/identityprovider"
+	"github.com/thusharprakash/go-orbit-db/accesscontroller"
 )
 
 // storeInterface An interface used to avoid import cycles

@@ -1,11 +1,11 @@
 package stores
 
 import (
-	ipfslog "berty.tech/go-ipfs-log"
-	"berty.tech/go-orbit-db/address"
-	"berty.tech/go-orbit-db/stores/replicator"
 	cid "github.com/ipfs/go-cid"
 	peer "github.com/libp2p/go-libp2p/core/peer"
+	ipfslog "github.com/thusharprakash/go-ipfs-log"
+	"github.com/thusharprakash/go-orbit-db/address"
+	"github.com/thusharprakash/go-orbit-db/stores/replicator"
 )
 
 var Events = []interface{}{

@@ -3,8 +3,8 @@ package accesscontroller
 import (
 	"context"
 
-	"berty.tech/go-ipfs-log/accesscontroller"
-	"berty.tech/go-ipfs-log/iface"
+	"github.com/thusharprakash/go-ipfs-log/accesscontroller"
+	"github.com/thusharprakash/go-ipfs-log/iface"
 
 	"go.uber.org/zap"
 )

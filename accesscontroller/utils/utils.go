@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	"berty.tech/go-orbit-db/accesscontroller"
-	"berty.tech/go-orbit-db/iface"
 	cid "github.com/ipfs/go-cid"
+	"github.com/thusharprakash/go-orbit-db/accesscontroller"
+	"github.com/thusharprakash/go-orbit-db/iface"
 )
 
 // Create Creates a new access controller and returns the manifest CID

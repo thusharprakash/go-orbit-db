@@ -6,11 +6,11 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"berty.tech/go-ipfs-log/entry"
-	"berty.tech/go-orbit-db/iface"
 	cid "github.com/ipfs/go-cid"
 	datastore "github.com/ipfs/go-datastore"
 	files "github.com/ipfs/go-libipfs/files"
+	"github.com/thusharprakash/go-ipfs-log/entry"
+	"github.com/thusharprakash/go-orbit-db/iface"
 )
 
 func SaveSnapshot(ctx context.Context, b iface.Store) (cid.Cid, error) {

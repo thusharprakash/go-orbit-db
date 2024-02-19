@@ -1,9 +1,9 @@
 package basestore
 
 import (
-	ipfslog "berty.tech/go-ipfs-log"
+	ipfslog "github.com/thusharprakash/go-ipfs-log"
 
-	"berty.tech/go-orbit-db/iface"
+	"github.com/thusharprakash/go-orbit-db/iface"
 )
 
 type noopIndex struct{}

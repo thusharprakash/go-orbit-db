@@ -1,8 +1,8 @@
 package replicator
 
 import (
-	ipfslog "berty.tech/go-ipfs-log"
 	cid "github.com/ipfs/go-cid"
+	ipfslog "github.com/thusharprakash/go-ipfs-log"
 )
 
 var Events = []interface{}{

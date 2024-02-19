@@ -1,8 +1,8 @@
 package replicator
 
 import (
-	"berty.tech/go-ipfs-log/iface"
 	cid "github.com/ipfs/go-cid"
+	"github.com/thusharprakash/go-ipfs-log/iface"
 )
 
 type processItem interface {

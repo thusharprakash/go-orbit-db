@@ -7,11 +7,11 @@ import (
 	"path"
 	"sync"
 
-	"berty.tech/go-orbit-db/address"
-	"berty.tech/go-orbit-db/cache"
 	datastore "github.com/ipfs/go-datastore"
 	"github.com/ipfs/go-datastore/query"
 	leveldb "github.com/ipfs/go-ds-leveldb"
+	"github.com/thusharprakash/go-orbit-db/address"
+	"github.com/thusharprakash/go-orbit-db/cache"
 	"go.uber.org/zap"
 )
 

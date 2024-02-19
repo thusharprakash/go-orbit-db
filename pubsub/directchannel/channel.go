@@ -7,11 +7,11 @@ import (
 	"fmt"
 	"io"
 
-	"berty.tech/go-orbit-db/iface"
-	"berty.tech/go-orbit-db/pubsub"
 	"github.com/libp2p/go-libp2p/core/host"
 	"github.com/libp2p/go-libp2p/core/network"
 	"github.com/libp2p/go-libp2p/core/peer"
+	"github.com/thusharprakash/go-orbit-db/iface"
+	"github.com/thusharprakash/go-orbit-db/pubsub"
 	"go.uber.org/zap"
 )
 

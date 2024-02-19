@@ -1,16 +1,15 @@
-module berty.tech/go-orbit-db
+module github.com/thusharprakash/go-orbit-db
 
 go 1.19
 
 require (
-	berty.tech/go-ipfs-log v1.10.0
+	github.com/thusharprakash/go-ipfs-log v1.10.0
 	github.com/ipfs/go-cid v0.4.1
 	github.com/ipfs/go-datastore v0.6.0
 	github.com/ipfs/go-ds-leveldb v0.5.0
 	github.com/ipfs/go-ipld-cbor v0.0.6
 	github.com/ipfs/go-libipfs v0.6.2
-	github.com/ipfs/interface-go-ipfs-core v0.11.1
-	github.com/ipfs/kubo v0.19.0
+	github.com/ipfs/boxo/coreiface v0.11.1
 	github.com/libp2p/go-libp2p v0.27.8
 	github.com/libp2p/go-libp2p-pubsub v0.9.3
 	github.com/pkg/errors v0.9.1

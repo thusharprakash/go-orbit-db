@@ -4,9 +4,9 @@ import (
 	"context"
 	"testing"
 
-	orbitdb "berty.tech/go-orbit-db"
-	"berty.tech/go-orbit-db/iface"
 	"github.com/stretchr/testify/require"
+	orbitdb "github.com/thusharprakash/go-orbit-db"
+	"github.com/thusharprakash/go-orbit-db/iface"
 )
 
 func TestKeyValueStore(t *testing.T) {

@@ -13,8 +13,8 @@
     <img src="https://www.codefactor.io/repository/github/berty/go-orbit-db/badge"
          alt="Code Factor">
   </a>
-  <a href="https://goreportcard.com/report/berty.tech/go-orbit-db">
-    <img src="https://goreportcard.com/badge/berty.tech/go-orbit-db"
+  <a href="https://goreportcard.com/report/github.com/thusharprakash/go-orbit-db">
+    <img src="https://goreportcard.com/badge/github.com/thusharprakash/go-orbit-db"
          alt="Go Report Card">
   </a>
   <a href="https://github.com/berty/go-orbit-db/releases">
@@ -25,14 +25,14 @@
     <img src="https://codecov.io/gh/berty/go-orbit-db/branch/master/graph/badge.svg"
          alt="Coverage" />
   </a>
-  <a href="https://godoc.org/berty.tech/go-orbit-db">
-    <img src="https://godoc.org/berty.tech/go-orbit-db?status.svg"
+  <a href="https://godoc.org/github.com/thusharprakash/go-orbit-db">
+    <img src="https://godoc.org/github.com/thusharprakash/go-orbit-db?status.svg"
          alt="GoDoc">
   </a>
 </p>
 
 <p align="center"><b>
-    <a href="https://berty.tech">berty.tech</a> •
+    <a href="https://github.com/thusharprakash">github.com/thusharprakash</a> •
     <a href="https://github.com/berty">GitHub</a>
 </b></p>
 
@@ -51,7 +51,7 @@ See [GoDoc](https://godoc.org/github.com/berty/go-orbit-db).
 Constraints:
 
 * `go-orbit-db` currently only works with **go1.16** and later
-* You need to use the canonical import: `berty.tech/go-orbit-db` instead of `github.com/berty/go-orbit-db`
+* You need to use the canonical import: `github.com/thusharprakash/go-orbit-db` instead of `github.com/berty/go-orbit-db`
 * If you have `410 gone` errors, make sure that you use a reliable `$GOPROXY` or disable it completely
 
 Example:
@@ -59,7 +59,7 @@ Example:
 ```console
 $ go version
 go version go1.17.3 darwin/amd64
-$ go get berty.tech/go-orbit-db
+$ go get github.com/thusharprakash/go-orbit-db
 [...]
 $
 ```
