@@ -14,7 +14,7 @@ require (
 	github.com/pkg/errors v0.9.1
 	github.com/polydawn/refmt v0.89.0
 	github.com/stretchr/testify v1.8.4
-	github.com/thusharprakash/go-ipfs-log v0.0.0-20240219020234-5678a66aa4b6
+	github.com/thusharprakash/go-ipfs-log v0.0.0-20240219040330-f5e53332e882
 	go.opentelemetry.io/otel v1.23.1
 	go.opentelemetry.io/otel/trace v1.23.1
 	go.uber.org/goleak v1.3.0

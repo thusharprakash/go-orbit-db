@@ -720,8 +720,8 @@ github.com/syndtr/goleveldb v1.0.0/go.mod h1:ZVVdQEZoIme9iO1Ch2Jdy24qqXrMMOU6lpP
 github.com/syndtr/goleveldb v1.0.1-0.20210819022825-2ae1ddf74ef7 h1:epCh84lMvA70Z7CTTCmYQn2CKbY8j86K7/FAIr141uY=
 github.com/syndtr/goleveldb v1.0.1-0.20210819022825-2ae1ddf74ef7/go.mod h1:q4W45IWZaF22tdD+VEXcAWRA037jwmWEB5VWYORlTpc=
 github.com/tarm/serial v0.0.0-20180830185346-98f6abe2eb07/go.mod h1:kDXzergiv9cbyO7IOYJZWg1U88JhDg3PB6klq9Hg2pA=
-github.com/thusharprakash/go-ipfs-log v0.0.0-20240219020234-5678a66aa4b6 h1:tknCCekPW1bhseQOnC6vytxfngP2wuZSadT+ZP7y5Hk=
-github.com/thusharprakash/go-ipfs-log v0.0.0-20240219020234-5678a66aa4b6/go.mod h1:asbWVdNcyciLXFxN1xL04yc5vsi7QDz1xds5mzSidIE=
+github.com/thusharprakash/go-ipfs-log v0.0.0-20240219040330-f5e53332e882 h1:sUPJ5cQ3A76fMzibq25milJoFPN5f1+AmiKBLkvu630=
+github.com/thusharprakash/go-ipfs-log v0.0.0-20240219040330-f5e53332e882/go.mod h1:DIZUm8aPeDHoZUXfCu64WdksiJUEyonNuZ7Ewx9txVo=
 github.com/tj/assert v0.0.3 h1:Df/BlaZ20mq6kuai7f5z2TvPFiwC3xaWJSDQNiIS3Rk=
 github.com/tv42/httpunix v0.0.0-20191220191345-2ba4b9c3382c h1:u6SKchux2yDvFQnDHS3lPnIRmfVJ5Sxy3ao2SIdysLQ=
 github.com/tv42/httpunix v0.0.0-20191220191345-2ba4b9c3382c/go.mod h1:hzIxponao9Kjc7aWznkXaL4U4TWaDSs8zcsY4Ka08nM=
