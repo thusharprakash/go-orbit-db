@@ -12,7 +12,6 @@ import (
 	datastore "github.com/ipfs/go-datastore"
 	leveldb "github.com/ipfs/go-ds-leveldb"
 	cbornode "github.com/ipfs/go-ipld-cbor"
-	"github.com/ipfs/kubo/core/coreiface"
 	coreiface "github.com/ipfs/kubo/core/coreiface"
 	"github.com/libp2p/go-libp2p/core/event"
 	peer "github.com/libp2p/go-libp2p/core/peer"
