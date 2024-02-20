@@ -9,6 +9,7 @@ import (
 	"time"
 
 	files "github.com/ipfs/boxo/files"
+	"github.com/ipfs/boxo/path"
 	cid "github.com/ipfs/go-cid"
 	datastore "github.com/ipfs/go-datastore"
 	coreiface "github.com/ipfs/kubo/core/coreiface"
@@ -718,7 +719,12 @@ func (b *BaseStore) LoadFromSnapshot(ctx context.Context) error {
 
 	b.Logger().Debug("loading snapshot from path", zap.String("snapshot", string(snapshot)))
 
-	resNode, err := b.IPFS().Unixfs().Get(ctx, coreiface.ResolveNode(ctx, string(snapshot)))
+	pathForRsNode, err := path.NewPath(string(snapshot))
+	if err != nil {
+		return fmt.Errorf("unable to create path from snapshot: %w", err)
+	}
+
+	resNode, err := b.IPFS().Unixfs().Get(ctx, pathForRsNode)
 	if err != nil {
 		return fmt.Errorf("unable to get snapshot from ipfs: %w", err)
 	}
