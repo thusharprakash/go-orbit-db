@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	coreapi "github.com/ipfs/kubo/core/coreapi"
+	coreiface "github.com/ipfs/kubo/core/coreiface"
 	"github.com/thusharprakash/go-ipfs-log/identityprovider"
 
 	"github.com/thusharprakash/go-orbit-db/address"
@@ -85,7 +85,7 @@ func (o *orbitDBKeyValue) Type() string {
 }
 
 // NewOrbitDBKeyValue Instantiates a new KeyValueStore
-func NewOrbitDBKeyValue(ipfs coreapi.CoreAPI, identity *identityprovider.Identity, addr address.Address, options *iface.NewStoreOptions) (i iface.Store, e error) {
+func NewOrbitDBKeyValue(ipfs coreiface.CoreAPI, identity *identityprovider.Identity, addr address.Address, options *iface.NewStoreOptions) (i iface.Store, e error) {
 	store := &orbitDBKeyValue{}
 
 	options.Index = NewKVIndex

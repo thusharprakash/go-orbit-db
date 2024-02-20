@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	cid "github.com/ipfs/go-cid"
-	coreapi "github.com/ipfs/kubo/core/coreapi"
+	coreiface "github.com/ipfs/kubo/core/coreiface"
 	ipfslog "github.com/thusharprakash/go-ipfs-log"
 	"github.com/thusharprakash/go-ipfs-log/identityprovider"
 	"github.com/thusharprakash/go-orbit-db/address"
@@ -201,7 +201,7 @@ func (o *orbitDBEventLogStore) Type() string {
 }
 
 // NewOrbitDBEventLogStore Instantiates a new EventLogStore
-func NewOrbitDBEventLogStore(ipfs coreapi.CoreAPI, identity *identityprovider.Identity, addr address.Address, options *iface.NewStoreOptions) (i iface.Store, e error) {
+func NewOrbitDBEventLogStore(ipfs coreiface.CoreAPI, identity *identityprovider.Identity, addr address.Address, options *iface.NewStoreOptions) (i iface.Store, e error) {
 
 	store := &orbitDBEventLogStore{}
 	options.Index = NewEventIndex

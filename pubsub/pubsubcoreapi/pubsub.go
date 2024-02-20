@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	coreapi "github.com/ipfs/kubo/core/coreapi"
+	coreiface "github.com/ipfs/kubo/core/coreiface"
 	options "github.com/ipfs/kubo/core/coreiface/options"
 	"github.com/libp2p/go-libp2p/core/peer"
 	"go.opentelemetry.io/otel/trace"
@@ -141,7 +141,7 @@ func (p *psTopic) Topic() string {
 }
 
 type coreAPIPubSub struct {
-	api          coreapi.CoreAPI
+	api          coreiface.CoreAPI
 	logger       *zap.Logger
 	id           peer.ID
 	pollInterval time.Duration
@@ -166,7 +166,7 @@ func (c *coreAPIPubSub) TopicSubscribe(_ context.Context, topic string) (iface.P
 	return c.topics[topic], nil
 }
 
-func NewPubSub(api coreapi.CoreAPI, id peer.ID, pollInterval time.Duration, logger *zap.Logger, tracer trace.Tracer) iface.PubSubInterface {
+func NewPubSub(api coreiface.CoreAPI, id peer.ID, pollInterval time.Duration, logger *zap.Logger, tracer trace.Tracer) iface.PubSubInterface {
 	if logger == nil {
 		logger = zap.NewNop()
 	}

@@ -4,7 +4,7 @@ import (
 	"context"
 
 	cid "github.com/ipfs/go-cid"
-	coreapi "github.com/ipfs/kubo/core/coreapi"
+	coreiface "github.com/ipfs/kubo/core/coreiface"
 	"github.com/libp2p/go-libp2p/core/event"
 	ipfslog "github.com/thusharprakash/go-ipfs-log"
 	"github.com/thusharprakash/go-ipfs-log/identityprovider"
@@ -14,7 +14,7 @@ import (
 // storeInterface An interface used to avoid import cycles
 type storeInterface interface {
 	OpLog() ipfslog.Log
-	IPFS() coreapi.CoreAPI
+	IPFS() coreiface.CoreAPI
 	Identity() *identityprovider.Identity
 	AccessController() accesscontroller.Interface
 	SortFn() ipfslog.SortFn

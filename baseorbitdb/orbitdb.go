@@ -12,7 +12,8 @@ import (
 	datastore "github.com/ipfs/go-datastore"
 	leveldb "github.com/ipfs/go-ds-leveldb"
 	cbornode "github.com/ipfs/go-ipld-cbor"
-	coreapi "github.com/ipfs/kubo/core/coreapi"
+	"github.com/ipfs/kubo/core/coreiface"
+	coreiface "github.com/ipfs/kubo/core/coreiface"
 	"github.com/libp2p/go-libp2p/core/event"
 	peer "github.com/libp2p/go-libp2p/core/peer"
 	"github.com/libp2p/go-libp2p/p2p/host/eventbus"
@@ -98,7 +99,7 @@ type orbitDB struct {
 	cancel                context.CancelFunc
 	storeTypes            map[string]iface.StoreConstructor
 	accessControllerTypes map[string]iface.AccessControllerConstructor
-	ipfs                  coreapi.CoreAPI
+	ipfs                  coreiface.CoreAPI
 	identity              *idp.Identity
 	id                    peer.ID
 	pubsub                iface.PubSubInterface
@@ -136,7 +137,7 @@ func (o *orbitDB) Tracer() trace.Tracer {
 	return o.tracer
 }
 
-func (o *orbitDB) IPFS() coreapi.CoreAPI {
+func (o *orbitDB) IPFS() coreiface.CoreAPI {
 	o.muIPFS.RLock()
 	defer o.muIPFS.RUnlock()
 
@@ -316,7 +317,7 @@ func (o *orbitDB) getStoreConstructor(s string) (iface.StoreConstructor, bool) {
 	return constructor, ok
 }
 
-func newOrbitDB(ctx context.Context, is coreapi.CoreAPI, identity *idp.Identity, options *NewOrbitDBOptions) (BaseOrbitDB, error) {
+func newOrbitDB(ctx context.Context, is coreiface.CoreAPI, identity *idp.Identity, options *NewOrbitDBOptions) (BaseOrbitDB, error) {
 	if is == nil {
 		return nil, fmt.Errorf("ipfs is a required argument")
 	}
@@ -408,7 +409,7 @@ func newOrbitDB(ctx context.Context, is coreapi.CoreAPI, identity *idp.Identity,
 }
 
 // NewOrbitDB Creates a new OrbitDB instance
-func NewOrbitDB(ctx context.Context, ipfs coreapi.CoreAPI, options *NewOrbitDBOptions) (BaseOrbitDB, error) {
+func NewOrbitDB(ctx context.Context, ipfs coreiface.CoreAPI, options *NewOrbitDBOptions) (BaseOrbitDB, error) {
 	if ipfs == nil {
 		return nil, fmt.Errorf("ipfs is a required argument")
 	}

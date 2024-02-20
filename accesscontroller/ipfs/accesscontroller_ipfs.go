@@ -8,7 +8,7 @@ import (
 
 	cid "github.com/ipfs/go-cid"
 	cbornode "github.com/ipfs/go-ipld-cbor"
-	coreapi "github.com/ipfs/kubo/core/coreapi"
+	coreiface "github.com/ipfs/kubo/core/coreiface"
 	"github.com/polydawn/refmt/obj/atlas"
 	logac "github.com/thusharprakash/go-ipfs-log/accesscontroller"
 	"github.com/thusharprakash/go-ipfs-log/identityprovider"
@@ -24,7 +24,7 @@ type cborWriteAccess struct {
 }
 
 type ipfsAccessController struct {
-	ipfs          coreapi.CoreAPI
+	ipfs          coreiface.CoreAPI
 	writeAccess   []string
 	muWriteAccess sync.RWMutex
 	logger        *zap.Logger

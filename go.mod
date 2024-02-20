@@ -1,6 +1,6 @@
 module github.com/thusharprakash/go-orbit-db
 
-go 1.19
+go 1.21.0
 
 require (
 	github.com/ipfs/boxo v0.17.0

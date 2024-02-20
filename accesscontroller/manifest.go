@@ -8,7 +8,7 @@ import (
 
 	cid "github.com/ipfs/go-cid"
 	cbornode "github.com/ipfs/go-ipld-cbor"
-	coreapi "github.com/ipfs/kubo/core/coreapi"
+	coreiface "github.com/ipfs/kubo/core/coreiface"
 	"github.com/polydawn/refmt/obj/atlas"
 	"github.com/thusharprakash/go-ipfs-log/io"
 	"go.uber.org/zap"
@@ -140,7 +140,7 @@ type ManifestParams interface {
 }
 
 // CreateManifest Creates a new manifest and returns its CID
-func CreateManifest(ctx context.Context, ipfs coreapi.CoreAPI, controllerType string, params ManifestParams) (cid.Cid, error) {
+func CreateManifest(ctx context.Context, ipfs coreiface.CoreAPI, controllerType string, params ManifestParams) (cid.Cid, error) {
 	if params.GetSkipManifest() {
 		return params.GetAddress(), nil
 	}
@@ -157,7 +157,7 @@ func CreateManifest(ctx context.Context, ipfs coreapi.CoreAPI, controllerType st
 }
 
 // ResolveManifest Retrieves a manifest from its address
-func ResolveManifest(ctx context.Context, ipfs coreapi.CoreAPI, manifestAddress string, params ManifestParams) (*Manifest, error) {
+func ResolveManifest(ctx context.Context, ipfs coreiface.CoreAPI, manifestAddress string, params ManifestParams) (*Manifest, error) {
 	if params.GetSkipManifest() {
 		if params.GetType() == "" {
 			return nil, fmt.Errorf("no manifest, access-controller type required")
